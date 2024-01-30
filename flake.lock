@@ -97,16 +97,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1706370590,
-        "narHash": "sha256-vq8hTMHsmPkBDaLR2i3m2nSmFObWmo7YwK51KQdI6RY=",
-        "owner": "NixOS",
+        "lastModified": 1706594396,
+        "narHash": "sha256-ZkCU/c71qy1GrPrk2pl20T1a1ADPEAmExLC2Zp6IhJY=",
+        "owner": "baloo",
         "repo": "nixpkgs",
-        "rev": "3fb3707af869e32b0ad0676f589b16cc7711a376",
+        "rev": "3bb72cfe77bd51fa52e0946c02194dab7b1b2067",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable-small",
+        "owner": "baloo",
+        "ref": "baloo/qemu-smm",
         "repo": "nixpkgs",
         "type": "github"
       }

@@ -100,6 +100,7 @@ let
         virtualisation = {
           useBootLoader = true;
           useEFIBoot = true;
+          efi.systemManagementModeEnforcement = true;
 
           # We actually only want to enable features in OVMF, but at
           # the moment edk2 202308 is also broken. So we downgrade it
@@ -201,7 +202,7 @@ in
     name = "lanzaboote";
     testScript = ''
       machine.start()
-      assert "Secure Boot: enabled (user)" in machine.succeed("bootctl status")
+      assert "Secure Boot: enabled (user)" in machine.succeed("bootctl status | tee /dev/stderr")
     '';
   };
 
